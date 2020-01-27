@@ -34,12 +34,6 @@ body{
 .col-11{width: 91.666666%;}
 .col-12{width: 100%;}
 
-.bleu{background: blue;min-height: 60px;}
-.rouge{background: red;min-height: 60px;}
-.vert{background: green;min-height: 60px;}
-.jaune{background: gold;min-height: 60px;}
-/* trois colonne égales cotes a cotes */
-
 .marge-1{margin-left:8.3333333%; }
 .marge-2{margin-left:16.66666%; }
 .marge-3{margin-left:25%; }
@@ -52,5 +46,13 @@ body{
 .marge-10{margin-left:83.3333333%; }
 .marge-11{margin-left: 91.666666%;}
 
-/*  */
+.bleu{background: blue;min-height: 60px;}
+.rouge{background: red;min-height: 60px;}
+.vert{background: green;min-height: 60px;}
+.jaune{background: gold;min-height: 60px;}
+/* trois colonne égales cotes a cotes */
+
+
+
+
 
