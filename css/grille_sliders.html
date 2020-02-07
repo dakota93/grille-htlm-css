@@ -16,9 +16,9 @@
         <header class="row">
             <div class="col-10 marge-1 marge-xsm col-xsm-12">
                 <h1>La montagne</h1>
-            </div>     
+            </div>
         </header>
-        
+
         <section class="row">
             <div class="col-xsm-12 col-sm-6 col-4">
                 <h2>1 Titre de niveau 2</h2>
@@ -49,14 +49,13 @@
                     recusandae quam doloribus hic pariatur perferendis dolorem commodi minus ullam, explicabo soluta
                     suscipit expedita, libero alias deleniti accusantium adipisci.</p>
             </div>
-        
+
             <div class="col-9 marge-1 ">
-                <img src="../img/1.jpg" alt="Texte alt" id="monImage"> 
+                <img src="../img/1.jpg" alt="Texte alt" id="monImage">
             </div>
-        
+
             <!-- fin section bas -->
         </section>
-
 
         <footer class="row">
             <div class="col-xsm-12 col-6">
@@ -73,19 +72,19 @@
         </footer>
         <!-- fermeture conteneur -->
     </div>
-<script>
-    var img = 0; // en variable j'initialise à 0
-    function f() {
-        img += 1 // j'incrémente de 1
-        monImage.setAttribute('src', '../img/' + img + '.jpg'); // je confère , je définit , je mets en place et j'appelle les images par leur nom automatiquement 
-        if (img == 4) {
-            // clear intervalle permet de stopper sous la condtion que la variable est égal à 6
-            clearInterval(timer)
+    <script>
+        var diapo = 0; // en variable j'initialise à 0
+        function f() {
+            diapo += 1 // j'incrémente de 1
+            monImage.setAttribute('src', '../img/' + diapo + '.jpg');  // je confère , je définit , je mets en place et j'appelle les images par leur nom automatiquement 
+            if (diapo == 4) {
+                // clear intervalle permet de stopper sous la condtion que la variable est égal à 6
+                clearInterval(timer)
+            }
         }
-    }
-    var timer = window.setInterval('f()', 3000); 
+        var timer = window.setInterval('f()', 1000);
 
-</script>  
+    </script>
 
 </body>
 
