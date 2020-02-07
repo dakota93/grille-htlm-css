@@ -43,18 +43,15 @@
             <!-- fin section central 1 rangée -->
         </section>
         <section class="row">
-            <div class="col-xsm-12 col-sm-6 col-4">
+            <div class="col-2">
                 <h2>1 Titre de niveau 2</h2>
                 <p> 1/Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus consequatur
                     recusandae quam doloribus hic pariatur perferendis dolorem commodi minus ullam, explicabo soluta
                     suscipit expedita, libero alias deleniti accusantium adipisci.</p>
             </div>
         
-            <div class="col-xsm-12 col-sm-6 col-4">
-                <h2>2 Titre de niveau 2</h2>
-                <p>2/Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque voluptate modi
-                    nam, quia impedit quasi mollitia praesentium tempora aliquid optio, officiis suscipit quibusdam
-                    ipsam! Non atque obcaecati quisquam perferendis!</p>
+            <div class="col-9 marge-1 ">
+                <img src="../img/1.jpg" alt="Texte alt" id="monImage"> 
             </div>
         
             <!-- fin section bas -->
@@ -76,6 +73,19 @@
         </footer>
         <!-- fermeture conteneur -->
     </div>
+<script>
+    var img = 0; // en variable j'initialise à 0
+    function f() {
+        img += 1 // j'incrémente de 1
+        monImage.setAttribute('src', '../img/' + img + '.jpg'); // je confère , je définit , je mets en place et j'appelle les images par leur nom automatiquement 
+        if (img == 4) {
+            // clear intervalle permet de stopper sous la condtion que la variable est égal à 6
+            clearInterval(timer)
+        }
+    }
+    var timer = window.setInterval('f()', 3000); 
+
+</script>  
 
 </body>
 
